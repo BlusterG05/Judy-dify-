@@ -4,7 +4,6 @@ LABEL maintainer="takatost@gmail.com"
 
 RUN apk add --no-cache tzdata
 
-
 # install packages
 FROM base as packages
 
@@ -15,15 +14,14 @@ COPY yarn.lock .
 
 RUN yarn install --frozen-lockfile
 
-
 # build resources
 FROM base as builder
+
 WORKDIR /app/web
 COPY --from=packages /app/web/ .
 COPY . .
 
 RUN yarn build
-
 
 # production stage
 FROM base as production
@@ -45,13 +43,18 @@ RUN yarn global add pm2 \
     && yarn cache clean
 
 WORKDIR /app/web
+
+# Copy from builder and set correct permissions
 COPY --from=builder /app/web/public ./public
 COPY --from=builder /app/web/.next/standalone ./
 COPY --from=builder /app/web/.next/static ./.next/static
 
+# Primero, copia el archivo entrypoint.sh
+COPY docker/entrypoint.sh ./entrypoint.sh
+# Luego, cambia los permisos
+RUN chmod +x ./entrypoint.sh
 
 COPY docker/pm2.json ./pm2.json
-COPY docker/entrypoint.sh ./entrypoint.sh
 
 ARG COMMIT_SHA
 ENV COMMIT_SHA ${COMMIT_SHA}
