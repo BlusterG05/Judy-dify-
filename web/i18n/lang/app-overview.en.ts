@@ -1,14 +1,14 @@
 const translation = {
   welcome: {
-    firstStepTip: 'To get started,',
-    enterKeyTip: 'enter your OpenAI API Key below',
-    getKeyTip: 'Get your API Key from OpenAI dashboard',
-    placeholder: 'Your OpenAI API Key(eg.sk-xxxx)',
+    firstStepTip: 'Para comenzar,',
+    enterKeyTip: 'introduce tu clave de API de OpenAI a continuación',
+    getKeyTip: 'Obtén tu clave de API desde el panel de OpenAI',
+    placeholder: 'Tu clave de API de OpenAI(ej.sk-xxxx)',
   },
   apiKeyInfo: {
     cloud: {
       trial: {
-        title: 'You are using the {{providerName}} trial quota.',
+        title: 'Estás usando la cuota de prueba de {{providerName}}.',
         description: 'The trial quota is provided for your testing use. Before the trial quota calls are exhausted, please set up your own model provider or purchase additional quota.',
       },
       exhausted: {
@@ -28,11 +28,11 @@ const translation = {
     tryCloud: 'Or try the cloud version of Dify with free quote',
   },
   overview: {
-    title: 'Overview',
+    title: 'Visión general',
     appInfo: {
-      explanation: 'Ready-to-use AI WebApp',
-      accessibleAddress: 'Public URL',
-      preview: 'Preview',
+      explanation: 'WebApp de IA lista para usar',
+      accessibleAddress: 'URL pública',
+      preview: 'Previsualizar',
       regenerate: 'Regenerate',
       preUseReminder: 'Please enable WebApp before continuing.',
       settings: {

@@ -1,5 +1,5 @@
 const translation = {
-  knowledge: 'Knowledge',
+  knowledge: 'Conocimiento',
   documentCount: ' docs',
   wordCount: 'k words',
   appCount: ' linked apps',
