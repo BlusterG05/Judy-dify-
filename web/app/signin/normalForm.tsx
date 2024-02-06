@@ -270,7 +270,7 @@ const NormalForm = () => {
                     type='primary'
                     onClick={handleEmailPasswordLogin}
                     disabled={isLoading}
-                    className="w-full !fone-medium !text-sm"
+                    className="w-full !fone-medium !text-sm bg-red-150 hover:bg-red-100"
                   >{t('login.signBtn')}</Button>
                 </div>
               </form>
@@ -281,13 +281,13 @@ const NormalForm = () => {
             {t('login.tosDesc')}
             &nbsp;
             <Link
-              className='text-primary-600'
+              className='text-red-150'
               target={'_blank'}
               href={language !== LanguagesSupportedUnderscore[1] ? 'https://docs.dify.ai/user-agreement/terms-of-service' : 'https://docs.dify.ai/v/zh-hans/user-agreement/terms-of-service'}
             >{t('login.tos')}</Link>
             &nbsp;&&nbsp;
             <Link
-              className='text-primary-600'
+              className='text-red-150'
               target={'_blank'}
               href={language !== LanguagesSupportedUnderscore[1] ? 'https://docs.dify.ai/user-agreement/privacy-policy' : 'https://docs.dify.ai/v/zh-hans/user-agreement/privacy-policy'}
             >{t('login.pp')}</Link>
