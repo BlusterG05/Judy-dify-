@@ -268,7 +268,7 @@ const NormalForm = () => {
                     type='primary'
                     onClick={handleEmailPasswordLogin}
                     disabled={isLoading}
-                    className="w-full !fone-medium !text-sm"
+                    className="w-full !fone-medium !text-sm bg-red-150 hover:bg-red-100"
                   >{t('login.signBtn')}</Button>
                 </div>
               </form>
