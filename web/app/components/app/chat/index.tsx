@@ -353,7 +353,7 @@ const Chat: FC<IChatProps> = ({
                           key={index}
                           onClick={() => onQueryChange(item)}
                         >
-                          <span className='text-primary-600 text-xs font-medium'>{item}</span>
+                          <span className='text-red-150 text-xs font-medium'>{item}</span>
                         </Button>
                       </div>
                     ))}
@@ -406,7 +406,7 @@ const Chat: FC<IChatProps> = ({
                   query
                     ? (
                       <div className='flex justify-center items-center w-8 h-8 cursor-pointer hover:bg-gray-100 rounded-lg' onClick={() => onQueryChange('')}>
-                        <XCircle className='w-4 h-4 text-[#98A2B3]' />
+                        <XCircle className='w-4 h-4 text-[#B3989C]' />
                       </div>
                     )
                     : isShowSpeechToText
@@ -416,7 +416,7 @@ const Chat: FC<IChatProps> = ({
                           onClick={handleVoiceInputShow}
                         >
                           <Microphone01 className='block w-4 h-4 text-gray-500 group-hover:hidden' />
-                          <Microphone01Solid className='hidden w-4 h-4 text-primary-600 group-hover:block' />
+                          <Microphone01Solid className='hidden w-4 h-4 text-red-150 group-hover:block' />
                         </div>
                       )
                       : null
