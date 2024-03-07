@@ -206,7 +206,8 @@ services:
 
   # Frontend web application.
   web:
-    image: langgenius/dify-web:0.5.8
+    #image: langgenius/dify-web:0.5.8
+    image: mi-imagen-web:latest
     restart: always
     environment:
       EDITION: SELF_HOSTED
@@ -214,7 +215,7 @@ services:
       APP_API_URL: ''
       SENTRY_DSN: ''
     ports:
-      - "3000:3000"
+      - "3000:3000" 
   # The postgres database.
   db:
     image: postgres:15-alpine
