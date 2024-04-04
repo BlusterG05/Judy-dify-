@@ -11,13 +11,14 @@ module.exports = {
         gray: {
           25: '#FCFCFD', // FCFCFD
           50: '#F9FAFB', // F9FAFB
-          100: '#F6F3F4', // F3F4F6
+          100: '#F3F4F6', // F3F4F6
           200: '#EBE6E5', // EBE6E5
           300: '#D1D6DB', // D1D5DB
           400: '#9CA5AF', // 9CA3AF
+          450: '#ACAEAF',
           500: '#6B7980', // 6B7280
           700: '#373E51', // 374151
-          800: '#371F1F', // 1F2A37
+          800: '#1F2A37', // 1F2A37
           900: '#281211', // 111928
         },
         primary: {
@@ -49,7 +50,7 @@ module.exports = {
           200: '#DCD7FE',
         },
         indigo: {
-          25: '#F5F8FF',
+          25: '#F4F5F8',
           50: '#EEF4FF',
           100: '#E0EAFF',
           300: '#A4BCFD',

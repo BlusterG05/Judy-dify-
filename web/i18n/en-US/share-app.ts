@@ -1,6 +1,6 @@
 const translation = {
   common: {
-    welcome: 'Welcome to use',
+    welcome: 'Habla con ',
     appUnavailable: 'Aplicación no disponible',
     appUnkonwError: 'Error desconocido en la aplicación',
   },
@@ -17,7 +17,7 @@ const translation = {
     configStatusDes: 'Antes de comenzar, puedes modificar las configuraciones de la conversación',
     configDisabled:
       'Se han utilizado las configuraciones de la sesión anterior para esta sesión.',
-    startChat: 'Iniciar conversación',
+    startChat: 'Iniciar Chat',
     privacyPolicyLeft:
       'Por favor, lee la ',
     privacyPolicyMiddle:

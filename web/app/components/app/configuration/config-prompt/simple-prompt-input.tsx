@@ -131,7 +131,7 @@ const Prompt: FC<ISimplePromptInput> = ({
 
   return (
     <div className={cn(!readonly ? `${s.gradientBorder}` : 'bg-gray-50', ' relative shadow-md')}>
-      <div className='rounded-xl bg-[#EEF4FF]'>
+      <div className='rounded-xl bg-[#F3F7F9]'>
         <div className="flex justify-between items-center h-11 px-3">
           <div className="flex items-center space-x-1">
             <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">

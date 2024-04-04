@@ -30,7 +30,7 @@ const HeaderInMobile = () => {
             icon={appData?.site.icon}
             background={appData?.site.icon_background}
           />
-          <div className='py-1 text-base font-semibold text-gray-800 truncate'>
+          <div className='py-1 text-base font-semibold text-gray-450 truncate'>
             {appData?.site.title}
           </div>
         </div>

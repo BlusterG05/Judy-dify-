@@ -38,7 +38,7 @@ const Header: FC<IHeaderProps> = ({
       <div
         className={`
           shrink-0 flex items-center justify-between h-14 px-4 bg-gray-100 
-          bg-gradient-to-r from-blue-600 to-sky-500
+          bg-gradient-to-r from-red-150 to-primary-500
         `}
       >
         <div className="flex items-center space-x-2">
